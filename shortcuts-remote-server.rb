@@ -5,21 +5,21 @@
 class ShortcutsRemoteServer < Formula
   desc ""
   homepage "https://github.com/pkarpovich/shortcuts-remote-server"
-  version "1.1.0"
+  version "1.1.1"
   depends_on :macos
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/pkarpovich/shortcuts-remote-server/releases/download/v1.1.0/shortcuts-remote-server_1.1.0_darwin_arm64.tar.gz"
-      sha256 "02de1d1dba8f25a54a23f7ff6192e63c484f091f150ee416db5b55d4fbb3039c"
+      url "https://github.com/pkarpovich/shortcuts-remote-server/releases/download/v1.1.1/shortcuts-remote-server_1.1.1_darwin_arm64.tar.gz"
+      sha256 "e1a4bb8e9cd681b947544e46ddfa4fb65708c4acc312e7d19d2fd5176a7bf719"
 
       def install
         bin.install "shortcuts-remote-server"
       end
     end
     if Hardware::CPU.intel?
-      url "https://github.com/pkarpovich/shortcuts-remote-server/releases/download/v1.1.0/shortcuts-remote-server_1.1.0_darwin_amd64.tar.gz"
-      sha256 "d589582dae48472d3a9e0e06d5cbdd90af812638905e9552ad864b91a98a0358"
+      url "https://github.com/pkarpovich/shortcuts-remote-server/releases/download/v1.1.1/shortcuts-remote-server_1.1.1_darwin_amd64.tar.gz"
+      sha256 "29acac969cdbec66242f3d11fb7434246a16488a7ff0d13ac15f18bf68597533"
 
       def install
         bin.install "shortcuts-remote-server"
