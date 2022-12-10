@@ -5,39 +5,21 @@
 class ShortcutsRemoteServer < Formula
   desc ""
   homepage "https://github.com/pkarpovich/shortcuts-remote-server"
-  version "1.0.1"
+  version "1.1.0"
+  depends_on :macos
 
   on_macos do
-    url "https://github.com/pkarpovich/shortcuts-remote-server/releases/download/v1.0.1/shortcuts-remote-server_1.0.1_darwin_amd64.tar.gz"
-    sha256 "ed0f81be0af5063f2999e730ac3c58b63f2561bd3773b7b017100e1453544c9a"
-
-    def install
-      bin.install "shortcuts-remote-server"
-    end
-
     if Hardware::CPU.arm?
-      def caveats
-        <<~EOS
-          The darwin_arm64 architecture is not supported for the ShortcutsRemoteServer
-          formula at this time. The darwin_amd64 binary may work in compatibility
-          mode, but it might not be fully supported.
-        EOS
-      end
-    end
-  end
-
-  on_linux do
-    if Hardware::CPU.arm? && !Hardware::CPU.is_64_bit?
-      url "https://github.com/pkarpovich/shortcuts-remote-server/releases/download/v1.0.1/shortcuts-remote-server_1.0.1_linux_armv6.tar.gz"
-      sha256 "b855f629c99dc2121d80f357a6d82dcb91f3e4417f29ffa2759487b66334df60"
+      url "https://github.com/pkarpovich/shortcuts-remote-server/releases/download/v1.1.0/shortcuts-remote-server_1.1.0_darwin_arm64.tar.gz"
+      sha256 "02de1d1dba8f25a54a23f7ff6192e63c484f091f150ee416db5b55d4fbb3039c"
 
       def install
         bin.install "shortcuts-remote-server"
       end
     end
     if Hardware::CPU.intel?
-      url "https://github.com/pkarpovich/shortcuts-remote-server/releases/download/v1.0.1/shortcuts-remote-server_1.0.1_linux_amd64.tar.gz"
-      sha256 "d71aaf211cdf59dc82cb6c7e255acfab57178ce52a205fe31854ff8845264103"
+      url "https://github.com/pkarpovich/shortcuts-remote-server/releases/download/v1.1.0/shortcuts-remote-server_1.1.0_darwin_amd64.tar.gz"
+      sha256 "d589582dae48472d3a9e0e06d5cbdd90af812638905e9552ad864b91a98a0358"
 
       def install
         bin.install "shortcuts-remote-server"
