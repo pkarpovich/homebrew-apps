@@ -5,21 +5,21 @@
 class CommitAuthorRefresher < Formula
   desc ""
   homepage "https://github.com/pkarpovich/commit-author-refresher"
-  version "1.0.0"
+  version "1.0.1"
   depends_on :macos
 
   on_macos do
-    if Hardware::CPU.arm?
-      url "https://github.com/pkarpovich/commit-author-refresher/releases/download/v1.0.0/commit-author-refresher_1.0.0_darwin_arm64.tar.gz"
-      sha256 "b10fb56d0cf1bf86a854de95d36a28eab0c4dedd81f227e358e98947d623070b"
+    if Hardware::CPU.intel?
+      url "https://github.com/pkarpovich/commit-author-refresher/releases/download/v1.0.1/commit-author-refresher_1.0.1_darwin_amd64.tar.gz"
+      sha256 "481ece7a6cde73f232d13c249d2a1d10abafcab877a624e10a4f05b70c162404"
 
       def install
         bin.install "commit-author-refresher"
       end
     end
-    if Hardware::CPU.intel?
-      url "https://github.com/pkarpovich/commit-author-refresher/releases/download/v1.0.0/commit-author-refresher_1.0.0_darwin_amd64.tar.gz"
-      sha256 "277a18bc6c86d70aa97671c344df6fab42052bf1d0649b349da7374aabd8dbf8"
+    if Hardware::CPU.arm?
+      url "https://github.com/pkarpovich/commit-author-refresher/releases/download/v1.0.1/commit-author-refresher_1.0.1_darwin_arm64.tar.gz"
+      sha256 "87931ff793c76655f0100ae8a0b3526a30ebeda4cac0cb0d143aba4ff6b8463d"
 
       def install
         bin.install "commit-author-refresher"
