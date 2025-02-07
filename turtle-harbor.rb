@@ -5,12 +5,12 @@
 class TurtleHarbor < Formula
   desc "Script manager daemon for macOS"
   homepage "https://github.com/pkarpovich/turtle-harbor"
-  version "0.1.2"
+  version "0.1.3"
   depends_on :macos
 
   if Hardware::CPU.intel?
-    url "https://github.com/pkarpovich/turtle-harbor/releases/download/v0.1.2/turtle-harbor_0.1.2_darwin_amd64.tar.gz"
-    sha256 "d69e14d3f3d95e4898b2362aca42b5c852afe6e15d48b4365129458b23ac645e"
+    url "https://github.com/pkarpovich/turtle-harbor/releases/download/v0.1.3/turtle-harbor_0.1.3_darwin_amd64.tar.gz"
+    sha256 "31ec198814cc6275f8584e66e602421b5725aa5f80faa747b5ab52f2e0576b49"
 
     def install
       bin.install "th"
@@ -20,8 +20,8 @@ class TurtleHarbor < Formula
     end
   end
   if Hardware::CPU.arm?
-    url "https://github.com/pkarpovich/turtle-harbor/releases/download/v0.1.2/turtle-harbor_0.1.2_darwin_arm64.tar.gz"
-    sha256 "20d10ee262325ad890016d30c20a595a827bbfb8927421079962ecca2d073596"
+    url "https://github.com/pkarpovich/turtle-harbor/releases/download/v0.1.3/turtle-harbor_0.1.3_darwin_arm64.tar.gz"
+    sha256 "176e2a7c745a8ac4b32802e4e711696323536b78b021b1a31c660eeead02bbda"
 
     def install
       bin.install "th"
@@ -34,7 +34,6 @@ class TurtleHarbor < Formula
   service do
     run [opt_bin/"turtled"]
     keep_alive true
-    sudo true
     working_dir var/"lib/turtle-harbor"
     log_path var/"log/turtle-harbor/daemon.log"
     error_log_path var/"log/turtle-harbor/daemon.error.log"
