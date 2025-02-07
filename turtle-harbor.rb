@@ -5,12 +5,12 @@
 class TurtleHarbor < Formula
   desc "Script manager daemon for macOS"
   homepage "https://github.com/pkarpovich/turtle-harbor"
-  version "0.1.4"
+  version "0.1.5"
   depends_on :macos
 
   if Hardware::CPU.intel?
-    url "https://github.com/pkarpovich/turtle-harbor/releases/download/v0.1.4/turtle-harbor_0.1.4_darwin_amd64.tar.gz"
-    sha256 "4a3a4a2c739a33b8021a0769db9904691e4cc59b36b827676822554c168074b3"
+    url "https://github.com/pkarpovich/turtle-harbor/releases/download/v0.1.5/turtle-harbor_0.1.5_darwin_amd64.tar.gz"
+    sha256 "ad3115f14151a5f646981b95af2965b41a4784946d1489bd41641b7a896ac053"
 
     def install
       bin.install "th"
@@ -20,8 +20,8 @@ class TurtleHarbor < Formula
     end
   end
   if Hardware::CPU.arm?
-    url "https://github.com/pkarpovich/turtle-harbor/releases/download/v0.1.4/turtle-harbor_0.1.4_darwin_arm64.tar.gz"
-    sha256 "4280dbffc4c949f7aa42ee4218b11e2d24b823f926ec1f380e3d730433dce0de"
+    url "https://github.com/pkarpovich/turtle-harbor/releases/download/v0.1.5/turtle-harbor_0.1.5_darwin_arm64.tar.gz"
+    sha256 "2300aa7cc8d7018ddfc1ca241416e7e016dd6aaf0c0ad91f41f594b716d35e15"
 
     def install
       bin.install "th"
