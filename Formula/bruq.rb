@@ -1,17 +1,17 @@
 class Bruq < Formula
   desc "Convert Bruno .bru files to curl commands"
   homepage "https://github.com/pkarpovich/bruq"
-  version "0.1.0"
+  version "0.1.1"
   license "MIT"
 
   on_macos do
     on_arm do
-      url "https://github.com/pkarpovich/bruq/releases/download/v0.1.0/bruq-aarch64-apple-darwin.tar.gz"
-      sha256 "2b05ae289d7a539f8946caf1be60adc5fee4b42ff416af3381e3b890ad4e02ac"
+      url "https://github.com/pkarpovich/bruq/releases/download/v0.1.1/bruq-aarch64-apple-darwin.tar.gz"
+      sha256 "8d989b71af7fa99b27ca12502f727301e2a4196a726a500de1798dcb98dad905"
     end
     on_intel do
-      url "https://github.com/pkarpovich/bruq/releases/download/v0.1.0/bruq-x86_64-apple-darwin.tar.gz"
-      sha256 "394de1c999a87ea02bbf9540246dd5c51f3f6474cf23475fbb33c900b18856ac"
+      url "https://github.com/pkarpovich/bruq/releases/download/v0.1.1/bruq-x86_64-apple-darwin.tar.gz"
+      sha256 "93c1a91cfd83493b9d492d479f995c03dd6c0b67f74d5397969a9c58067458c3"
     end
   end
 
