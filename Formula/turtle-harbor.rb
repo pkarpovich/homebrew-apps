@@ -1,17 +1,17 @@
 class TurtleHarbor < Formula
   desc "Script manager daemon with auto-restart and cron scheduling"
   homepage "https://github.com/pkarpovich/turtle-harbor"
-  version "0.5.0"
+  version "0.5.1"
   license "MIT"
 
   on_macos do
     on_arm do
-      url "https://github.com/pkarpovich/turtle-harbor/releases/download/v0.5.0/turtle-harbor-aarch64-apple-darwin.tar.gz"
-      sha256 "36bc3c301f6de0fcf289b6e6e57df3627b05471cb845f423b63b131636d76901"
+      url "https://github.com/pkarpovich/turtle-harbor/releases/download/v0.5.1/turtle-harbor-aarch64-apple-darwin.tar.gz"
+      sha256 "b85e239a5a75933ce6008279801fbd1845a6653ca64ea31faa06b856e4f169f6"
     end
     on_intel do
-      url "https://github.com/pkarpovich/turtle-harbor/releases/download/v0.5.0/turtle-harbor-x86_64-apple-darwin.tar.gz"
-      sha256 "d0c19f50f0c3172fd9f6bdc4b0eb28779c2ec670d6e5cbbe744c8e2f1abd4ade"
+      url "https://github.com/pkarpovich/turtle-harbor/releases/download/v0.5.1/turtle-harbor-x86_64-apple-darwin.tar.gz"
+      sha256 "e63e19114c6200133fbca0411beaefb4eb2e2752ca4788ca780263558c7d8fd6"
     end
   end
 
