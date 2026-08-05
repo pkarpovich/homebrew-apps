@@ -1,14 +1,14 @@
 class Nhop < Formula
   desc "Rule-based local proxy router for macOS"
   homepage "https://github.com/pkarpovich/nhop"
-  version "0.1.0"
+  version "0.1.1"
   license "MIT"
 
   depends_on arch: :arm64
   depends_on :macos
 
-  url "https://github.com/pkarpovich/nhop/releases/download/v0.1.0/nhop-aarch64-apple-darwin.tar.gz"
-  sha256 "0faf3a0c0f3e87848e92253793db8c959e1e7609993b61049984dbda1eed5eaf"
+  url "https://github.com/pkarpovich/nhop/releases/download/v0.1.1/nhop-aarch64-apple-darwin.tar.gz"
+  sha256 "3bf0394d23be6fb59a22fb47c190d1115bf24fbf653d445b80557bb794753b3b"
 
   def install
     bin.install "nhop"
@@ -18,6 +18,10 @@ class Nhop < Formula
   # is always the installed one and there is no placeholder to substitute.
   service do
     run [opt_bin/"nhop", "start"]
+    # Homebrew's generated plist carries no PATH, so the daemon would
+    # inherit launchd's minimal one and an init script whose shebang
+    # resolves an interpreter through env would fail to start.
+    environment_variables PATH: std_service_path_env
     keep_alive true
     log_path var/"log/nhop.log"
     error_log_path var/"log/nhop.err.log"
