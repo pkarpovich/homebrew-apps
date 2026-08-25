@@ -1,14 +1,14 @@
 class Nhop < Formula
   desc "Rule-based local proxy router for macOS"
   homepage "https://github.com/pkarpovich/nhop"
-  version "0.1.3"
+  version "0.1.4"
   license "MIT"
 
   depends_on arch: :arm64
   depends_on :macos
 
-  url "https://github.com/pkarpovich/nhop/releases/download/v0.1.3/nhop-aarch64-apple-darwin.tar.gz"
-  sha256 "c9fc361e3a019fc95c25ef2045202e1c01232cbf7ab3e3e57a30a6054ac090ad"
+  url "https://github.com/pkarpovich/nhop/releases/download/v0.1.4/nhop-aarch64-apple-darwin.tar.gz"
+  sha256 "bbb881a8b6e5cef6be6d746c24e3cc579ded76e0ec2562d72f2b6a323e5b3df8"
 
   def install
     bin.install "nhop"
