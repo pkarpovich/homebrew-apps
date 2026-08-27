@@ -1,14 +1,14 @@
 class Nikki < Formula
   desc "macOS activity capture daemon"
   homepage "https://github.com/pkarpovich/nikki"
-  version "0.1.0"
+  version "0.2.0"
   license "MIT"
 
   depends_on arch: :arm64
   depends_on :macos
 
-  url "https://github.com/pkarpovich/nikki/releases/download/v0.1.0/nikki-aarch64-apple-darwin.tar.gz"
-  sha256 "367aaff4ed6fbed276661b786f38e2400e773e39f960e841677cfad30c6d358b"
+  url "https://github.com/pkarpovich/nikki/releases/download/v0.2.0/nikki-aarch64-apple-darwin.tar.gz"
+  sha256 "7a80f63a28225ad7e9bd0df2d7dd4da4f5777f54cc25d96c82e79678a350d5c7"
 
   def install
     bin.install "nikki"
@@ -43,8 +43,11 @@ class Nikki < Formula
         brew services start nikki
 
       Grant Accessibility to nikki in System Settings > Privacy &
-      Security. Without it capture continues, but every window title
-      and document path is null and records carry degraded: true.
+      Security, then restart the service - macOS caches the denial for
+      the life of the process, so the grant does not take until
+      . Without it capture continues, but
+      every window title and document path is null and the records
+      carry degraded: true.
 
       The first time it reads a browser tab macOS asks for Automation
       access to Dia. Declining is permanent for this binary and the
