@@ -1,14 +1,14 @@
 class Nikki < Formula
   desc "macOS activity capture daemon"
   homepage "https://github.com/pkarpovich/nikki"
-  version "0.2.0"
+  version "0.3.0"
   license "MIT"
 
   depends_on arch: :arm64
   depends_on :macos
 
-  url "https://github.com/pkarpovich/nikki/releases/download/v0.2.0/nikki-aarch64-apple-darwin.tar.gz"
-  sha256 "7a80f63a28225ad7e9bd0df2d7dd4da4f5777f54cc25d96c82e79678a350d5c7"
+  url "https://github.com/pkarpovich/nikki/releases/download/v0.3.0/nikki-aarch64-apple-darwin.tar.gz"
+  sha256 "03f4f7b11fabe6ec769cdad029ce9c5020a317e3d96818d5b8e7a46a45bc9ddc"
 
   def install
     bin.install "nikki"
