@@ -1,6 +1,6 @@
 cask "mimi" do
-  version "0.2.1"
-  sha256 "a6ecf78c703b0fd7431a8ed4cf8c383b379b7419302e9748f7eddcdc3180f56c"
+  version "0.2.2"
+  sha256 "d326f94660d04d7adee1fb8d59eead92520e9521c722825fc8fabd770e69ce78"
 
   url "https://github.com/pkarpovich/mimi/releases/download/v#{version}/Mimi-arm64-#{version}.zip"
   name "mimi"
