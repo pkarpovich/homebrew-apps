@@ -1,6 +1,6 @@
 cask "yafetch" do
-  version "0.3.0"
-  sha256 "bd392b5d30fe4dbcad1da7d0cc5620123dbcdddcd45b380d5b29ef4788faceb6"
+  version "0.4.0"
+  sha256 "4e6808fcaa67d0fce6f28caea5a6f665066f198dbc962f43f31120cae24516ea"
 
   url "https://github.com/pkarpovich/yafetch/releases/download/v#{version}/yafetch-arm64-#{version}.zip"
   name "yafetch"
@@ -19,10 +19,11 @@ cask "yafetch" do
   zap trash: "~/.config/yafetch"
 
   caveats <<~CAVEATS
-    yafetch reads ~/.config/yafetch/init.lua and exits without one.
+    yafetch reads ~/.config/yafetch/init.lua and says so without one.
     Start from the sample:
 
-      mkdir -p ~/.config/yafetch
-      curl -o ~/.config/yafetch/init.lua https://raw.githubusercontent.com/pkarpovich/yafetch/main/examples/sample.lua
+      curl --create-dirs -o ~/.config/yafetch/init.lua https://raw.githubusercontent.com/pkarpovich/yafetch/main/examples/sample.lua
+
+    `yafetch --help` lists what else it takes.
   CAVEATS
 end
