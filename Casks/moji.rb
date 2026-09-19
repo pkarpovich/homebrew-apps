@@ -1,6 +1,6 @@
 cask "moji" do
-  version "0.1.0"
-  sha256 "ced0bbd8fbc66ae2c65564f64810d85c4b89b75f2a2c742a586c20909c2ebcfd"
+  version "0.2.0"
+  sha256 "fc77d0357f370776fa1cb17ec948e7127e7162325ecca0492a8255552f261e29"
 
   url "https://github.com/pkarpovich/moji/releases/download/v#{version}/Moji-arm64-#{version}.zip"
   name "moji"
