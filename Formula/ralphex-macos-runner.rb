@@ -1,12 +1,12 @@
 class RalphexMacosRunner < Formula
   desc "Native macOS runner daemon for ralphex-farm"
   homepage "https://github.com/pkarpovich/ralphex-macos-runner"
-  version "0.3.1"
+  version "0.3.2"
 
   on_macos do
     on_arm do
-      url "https://github.com/pkarpovich/ralphex-macos-runner/releases/download/v0.3.1/ralphex-macos-runner-aarch64-apple-darwin.tar.gz"
-      sha256 "ffbbdb943c54d0045ae7a4a661097469bf3cb5069b0966139101d66086a4db90"
+      url "https://github.com/pkarpovich/ralphex-macos-runner/releases/download/v0.3.2/ralphex-macos-runner-aarch64-apple-darwin.tar.gz"
+      sha256 "081a1fccf59ee35d7480e3afdfe287973dadae06a8591f1cca158c23dda635cd"
     end
   end
 
