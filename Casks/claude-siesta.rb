@@ -1,6 +1,6 @@
 cask "claude-siesta" do
-  version "0.1.0"
-  sha256 "61a1d1f6e8ce6b34853afe2e4faa319d49ab34c41a2004068f21f33b6016b993"
+  version "0.1.1"
+  sha256 "f59faa696ecaf60d660505ece8cbc35b987cb4b9d2f65a9c1e4ec15c19d83526"
 
   url "https://github.com/pkarpovich/claude-siesta/releases/download/v#{version}/claude-siesta-arm64-#{version}.zip"
   name "claude-siesta"
