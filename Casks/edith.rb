@@ -1,6 +1,6 @@
 cask "edith" do
-  version "0.1.2"
-  sha256 "04f7ac4e2812d6a45b12b995bbfd427de32e6bc33cfdd5d9cd59f864c1cd6d97"
+  version "0.2.0"
+  sha256 "77230039d9055a67d750552bf8322e2d0ea259932a758664f97443b89d1581b1"
 
   url "https://github.com/pkarpovich/edith/releases/download/v#{version}/Edith-#{version}.dmg"
   name "Edith"
