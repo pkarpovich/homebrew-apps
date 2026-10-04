@@ -1,17 +1,17 @@
 class Ovq < Formula
   desc "Query Obsidian vault files by frontmatter properties"
   homepage "https://github.com/pkarpovich/ovq"
-  version "0.3.0"
+  version "0.3.1"
   license "MIT"
 
   on_macos do
     on_arm do
-      url "https://github.com/pkarpovich/ovq/releases/download/v0.3.0/ovq-aarch64-apple-darwin.tar.gz"
-      sha256 "a2b5328b95a4c1343cc88d77201f491489db803e6cb72d0302e0fe5760ce74fb"
+      url "https://github.com/pkarpovich/ovq/releases/download/v0.3.1/ovq-aarch64-apple-darwin.tar.gz"
+      sha256 "68fd270542226f00f80a54820703a55b26248213e29acf3f4e9128b57f77262b"
     end
     on_intel do
-      url "https://github.com/pkarpovich/ovq/releases/download/v0.3.0/ovq-x86_64-apple-darwin.tar.gz"
-      sha256 "f777d547ae72c06399d568f93bc13ebaba40e1e03a2d32601ff770b2aed5a630"
+      url "https://github.com/pkarpovich/ovq/releases/download/v0.3.1/ovq-x86_64-apple-darwin.tar.gz"
+      sha256 "17ffa84dc3fc2723053b133758026cd9577bb7b20b7e4fca42a9107226300dde"
     end
   end
 
