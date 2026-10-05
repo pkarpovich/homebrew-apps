@@ -1,6 +1,6 @@
 cask "eventkit-bridge" do
-  version "0.3.0"
-  sha256 "5c95ecb33f3122fa8efea039dd6bb7b6c2f5f02979cdfbd7d8138ff881c82e82"
+  version "0.4.0"
+  sha256 "e4863ca112bf7948dfb9356b5931e474d8e5b6eb34ab7cdd3e6e50069fb59f78"
 
   url "https://github.com/pkarpovich/eventkit-bridge/releases/download/v#{version}/EventKitBridge-arm64-#{version}.zip"
   name "EventKitBridge"
@@ -41,6 +41,12 @@ cask "eventkit-bridge" do
        reminders) to the config, then run
          eventkit-bridge install
        again.
+
+    Mail is optional. To read the mail Apple Mail has downloaded, add EventKitBridge
+    in System Settings > Privacy & Security > Full Disk Access (there is no prompt).
+    This grants Full Disk Access to the whole bridge, not just mail. Then add [mail]
+    to the config, run eventkit-bridge install, name the accounts from the log under
+    [mail.accounts], and run eventkit-bridge install again.
 
     Upgrades need no action: the daemon restarts on the new version by itself.
     After upgrading from a version without reminders, approve the Reminders
