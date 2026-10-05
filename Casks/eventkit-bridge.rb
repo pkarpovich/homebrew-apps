@@ -1,10 +1,10 @@
 cask "eventkit-bridge" do
-  version "0.2.0"
-  sha256 "2f14d33cb89abc28ad4c578556a711c532115d29deb4f7409850870fbdaca054"
+  version "0.3.0"
+  sha256 "5c95ecb33f3122fa8efea039dd6bb7b6c2f5f02979cdfbd7d8138ff881c82e82"
 
   url "https://github.com/pkarpovich/eventkit-bridge/releases/download/v#{version}/EventKitBridge-arm64-#{version}.zip"
   name "EventKitBridge"
-  desc "HTTP API over the Mac's calendars through EventKit"
+  desc "HTTP API over the Mac's calendars and reminders through EventKit"
   homepage "https://github.com/pkarpovich/eventkit-bridge"
 
   livecheck do
@@ -35,12 +35,15 @@ cask "eventkit-bridge" do
          eventkit-bridge --check-config
     3. Install and start the LaunchAgent:
          eventkit-bridge install
-    4. Approve the Calendars prompt for EventKitBridge.
-    5. Find your calendar ids in ~/Library/Logs/eventkit-bridge.log, add
-       read_calendars and write_calendars to the config, then run
+    4. Approve the Calendars prompt for EventKitBridge, then the Reminders prompt.
+    5. Find your calendar and reminder list ids in ~/Library/Logs/eventkit-bridge.log,
+       add read_calendars and write_calendars (and read_lists and write_lists for
+       reminders) to the config, then run
          eventkit-bridge install
        again.
 
     Upgrades need no action: the daemon restarts on the new version by itself.
+    After upgrading from a version without reminders, approve the Reminders
+    prompt once.
   EOS
 end
