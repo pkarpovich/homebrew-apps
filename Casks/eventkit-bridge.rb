@@ -1,6 +1,6 @@
 cask "eventkit-bridge" do
-  version "0.1.0"
-  sha256 "a5d0bdbf67d42c18a6881bd49eab94fccdb28d2efc1cc2979f905ac7fc098a74"
+  version "0.2.0"
+  sha256 "2f14d33cb89abc28ad4c578556a711c532115d29deb4f7409850870fbdaca054"
 
   url "https://github.com/pkarpovich/eventkit-bridge/releases/download/v#{version}/EventKitBridge-arm64-#{version}.zip"
   name "EventKitBridge"
@@ -37,7 +37,7 @@ cask "eventkit-bridge" do
          eventkit-bridge install
     4. Approve the Calendars prompt for EventKitBridge.
     5. Find your calendar ids in ~/Library/Logs/eventkit-bridge.log, add
-       read_calendars and write_calendar to the config, then run
+       read_calendars and write_calendars to the config, then run
          eventkit-bridge install
        again.
 
