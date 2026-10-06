@@ -1,6 +1,6 @@
 cask "eventkit-bridge" do
-  version "0.5.0"
-  sha256 "589987c88225d42ffb669cb62b806b6964f4c28836f60b698402aca53cdf94bf"
+  version "0.6.0"
+  sha256 "79f4dd3d40813e395e87d0a9665cc63c5cd4159617d932552b7c23ab5db11c95"
 
   url "https://github.com/pkarpovich/eventkit-bridge/releases/download/v#{version}/EventKitBridge-arm64-#{version}.zip"
   name "EventKitBridge"
@@ -46,7 +46,9 @@ cask "eventkit-bridge" do
     in System Settings > Privacy & Security > Full Disk Access (there is no prompt).
     This grants Full Disk Access to the whole bridge, not just mail. Then add [mail]
     to the config, run eventkit-bridge install, name the accounts from the log under
-    [mail.accounts], and run eventkit-bridge install again.
+    [mail.accounts], and run eventkit-bridge install again. The first request that
+    marks a message as junk or not junk shows "EventKitBridge wants to control Mail";
+    allow it.
 
     Upgrades need no action: the daemon restarts on the new version by itself.
     After upgrading from a version without reminders, approve the Reminders
