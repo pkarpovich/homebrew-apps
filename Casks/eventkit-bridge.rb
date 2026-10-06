@@ -1,6 +1,6 @@
 cask "eventkit-bridge" do
-  version "0.4.0"
-  sha256 "e4863ca112bf7948dfb9356b5931e474d8e5b6eb34ab7cdd3e6e50069fb59f78"
+  version "0.5.0"
+  sha256 "589987c88225d42ffb669cb62b806b6964f4c28836f60b698402aca53cdf94bf"
 
   url "https://github.com/pkarpovich/eventkit-bridge/releases/download/v#{version}/EventKitBridge-arm64-#{version}.zip"
   name "EventKitBridge"
