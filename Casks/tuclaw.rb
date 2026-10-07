@@ -1,6 +1,6 @@
 cask "tuclaw" do
-  version "0.2.0"
-  sha256 "de4e19ce5b2e40e7cd1fb8fcea6829980ee8592d69c70356b9b85ef1721e5f99"
+  version "0.3.0"
+  sha256 "400b2058b4dc09942ed5365d21550bccae51017de383082de328ff483b4d76d9"
 
   url "https://github.com/pkarpovich/tuclaw-desktop/releases/download/v#{version}/Tuclaw-arm64-#{version}.zip"
   name "Tuclaw"
