@@ -1,6 +1,6 @@
 cask "nikki" do
-  version "0.9.1"
-  sha256 "d2a78bde1d21eff5c0a34f07766d526f4c75ae84e98b43d2f2149eb7568c501a"
+  version "0.10.0"
+  sha256 "125f3906750f4952689cc6ce3848780ec825dfa81fe135a772cb1fe1840daf23"
 
   url "https://github.com/pkarpovich/nikki/releases/download/v#{version}/Nikki-arm64-#{version}.zip"
   name "nikki"
