@@ -1,7 +1,7 @@
 class Foster < Formula
   desc "Process registry with PTY attach for long-running commands"
   homepage "https://github.com/pkarpovich/foster"
-  version "0.2.1"
+  version "0.3.0"
   license "MIT"
 
   livecheck do
@@ -13,8 +13,8 @@ class Foster < Formula
     depends_on arch: :arm64
 
     on_arm do
-      url "https://github.com/pkarpovich/foster/releases/download/v0.2.1/foster-aarch64-apple-darwin.tar.gz"
-      sha256 "0266ce62305177c29c1bcf448853a2827d75f13d74211d7daa15e78d696d5de7"
+      url "https://github.com/pkarpovich/foster/releases/download/v0.3.0/foster-aarch64-apple-darwin.tar.gz"
+      sha256 "f28f76afe589c00059423074c0004327c9430547491da50d0c9fba07fa9b2a08"
     end
   end
 
@@ -22,8 +22,8 @@ class Foster < Formula
     depends_on arch: :x86_64
 
     on_intel do
-      url "https://github.com/pkarpovich/foster/releases/download/v0.2.1/foster-x86_64-unknown-linux-musl.tar.gz"
-      sha256 "45c054b116c11ebcac3df88c3c635b96c7f06adb26fc2950d434e5289a2da8f5"
+      url "https://github.com/pkarpovich/foster/releases/download/v0.3.0/foster-x86_64-unknown-linux-musl.tar.gz"
+      sha256 "f678a69df7b70f90c47bdd177f2fcdb6429986d6e0f76ae04ed2fe953f5d4ec9"
     end
   end
 
