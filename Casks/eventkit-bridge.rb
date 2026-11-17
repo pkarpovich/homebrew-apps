@@ -1,6 +1,6 @@
 cask "eventkit-bridge" do
-  version "0.9.0"
-  sha256 "fc1a13d2392fb136d1d7cd87adb01cd22787a7dcdc31949407ec8359f855ce84"
+  version "0.10.0"
+  sha256 "387c5f1ea94b69b583f88a4e798b274a2eef961ce07af4c1682039a59d00765f"
 
   url "https://github.com/pkarpovich/eventkit-bridge/releases/download/v#{version}/EventKitBridge-arm64-#{version}.zip"
   name "EventKitBridge"
@@ -29,8 +29,14 @@ cask "eventkit-bridge" do
     eventkit-bridge runs as a LaunchAgent and needs a config before its first start.
 
     1. Create ~/.config/eventkit-bridge/config.toml with the address to listen on,
-       a literal IP such as your tailscale IP:
+       a literal IP such as your tailscale IP, and the [auth] table for your
+       OpenID provider (its key set over https only):
          listen = "100.64.0.1:8790"
+
+         [auth]
+         issuer = "https://auth.example.com"
+         audience = "https://eventkit-bridge"
+         jwks_url = "https://auth.example.com/jwks.json"
     2. Check the config:
          eventkit-bridge --check-config
     3. Install and start the LaunchAgent:
