@@ -1,6 +1,6 @@
 cask "gidora" do
-  version "0.2.1"
-  sha256 "442b7ab78727d17f07c8ed501d8480ca1b1163810e92f7708155c23bba2ca2c9"
+  version "0.2.2"
+  sha256 "0a42375e989571f7e614960199bbfd8f2207eff0572d3f9e198a6aa83dc93765"
 
   url "https://github.com/pkarpovich/gidora/releases/download/v#{version}/Gidora-arm64.dmg"
   name "Gidora"
